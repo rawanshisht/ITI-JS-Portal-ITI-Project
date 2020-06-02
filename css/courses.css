@@ -1,0 +1,201 @@
+#mainContainer :after {
+    background-image: url('./Resources/background7.jpg');
+      content: '';
+      position: absolute;
+      /* opacity: 0.1; */
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -3;
+      background-size: cover;
+  }
+  
+  #container {
+      margin: auto;
+      
+  }
+  
+  nav {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 20px;
+      padding: 0px;
+      margin: 0px;
+      z-index: 2;
+      position: absolute;
+      left: 35%;
+      top: 10%;
+      box-shadow: 10px 10px 13px #888888;
+  
+  
+  }
+
+
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0px 20px;
+    list-style: none;
+    text-decoration: none;
+
+    z-index: 2;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+header {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    z-index: 2;
+    padding: 40px;
+    color: blue;
+
+
+    /* padding-left: 30px; */
+}
+#list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#list>li {
+    display: inline-block;
+    /* margin: 0px 20px; */
+    list-style: none;
+    text-decoration: none;
+
+    z-index: 2;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: blue;
+    list-style: none;
+
+    z-index: 2;
+
+}
+
+#listItems {
+    font-weight: bold;
+
+    float: left;
+    width: 40%;
+    position: absolute;
+    top: 200px;
+}
+
+#listItems>ul {
+
+    float: left;
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+#listItems>ul>li {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+
+}
+
+[type='button'] {
+    /* position: absolute; */
+    /* left: 80%; */
+    /* top: 6%; */
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    width: 100px;
+    /* height: 50px; */
+    border: blue 1px solid;
+    /* box-shadow: 10px 10px 13px #888888; */
+}
+
+
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    /* float: right; */
+    position: absolute;
+    top: 220px;
+    left: 40%;
+
+    /* height: 400px; */
+    width: 250px;
+    /* border: 2px yellow solid; */
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+
+    position: absolute;
+    top: 310px;
+    /* left: 80%; */
+
+    height: 300px;
+    width: 250px;
+}
+
+
+p{
+    font-size: 14px;
+}
+
+#left{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+#right{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}

@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <title>Register Form</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/register.css" />
+
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div id="background">
+
+
+            <header>
+                Subero
+            </header>
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href='index.html'>Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="mailto:rawan.shisht@gmail.com?subject=Contact us message&body=I hope you are fine!">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+
+                                <label>Name</label>
+                            </td>
+                            <td>
+
+                                <input class="input" id="nameInput" name="name" type="text" placeholder="Name.." required>
+                                </br>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <label>University</label>
+                            </td>
+                            <td>
+
+                                <input class="input" id="uniInput" name="age" type="text" placeholder="University..">
+                                </br>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Gender
+                                </label>
+                            </td>
+                            <td>
+
+                                <input class="input" class="genderInput" type="radio" name="gender" value="male" required>Male
+                                <input class="input" class="genderInput" type="radio" name="gender" value="female" required>Female
+                                </br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Birthday
+
+                                </label>
+                            </td>
+                            <td id="daymonth">
+                                <input class="input" id="dateInput" type="date">
+                                </br>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="center" rowspan="2">
+
+                                <input id="submitBtn" type="submit" value="Submit">
+                            </td>
+                            <td id="center">
+
+                                <input id="resetBtn" type="submit" value="Reset">
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="about">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/register.js">
+    </script>
+</body>
+
+</html>

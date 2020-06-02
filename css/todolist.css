@@ -1,0 +1,380 @@
+ 
+
+#mainContainer :after {
+  background-image: url('./Resources/background7.jpg');
+    content: '';
+    position: absolute;
+    /* opacity: 0.1; */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-size: cover;
+}
+
+#container {
+    margin: auto;
+    
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    box-shadow: 10px 10px 13px #888888;
+
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0px 20px;
+    list-style: none;
+    text-decoration: none;
+
+    z-index: 2;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+header {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    z-index: 2;
+    padding: 40px;
+    color: blue;
+
+
+    /* padding-left: 30px; */
+}
+
+#list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#list>li {
+    display: inline-block;
+    /* margin: 0px 20px; */
+    list-style: none;
+    text-decoration: none;
+
+    z-index: 2;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: blue;
+    list-style: none;
+
+    z-index: 2;
+
+}
+
+#listItems {
+    font-weight: bold;
+
+    float: left;
+    width: 40%;
+    position: absolute;
+    top: 200px;
+}
+
+#listItems>ul {
+
+    float: left;
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+#listItems>ul>li {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+
+}
+
+[type='button'] {
+    /* position: absolute; */
+    /* left: 80%; */
+    /* top: 6%; */
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    width: 100px;
+    /* height: 50px; */
+    border: blue 1px solid;
+    /* box-shadow: 10px 10px 13px #888888; */
+}
+#profileData{
+    
+    padding: 10px;
+    margin-right: 20px;
+}
+aside {
+    float: left;
+    width: 30%;
+    position: absolute;
+    top: 200px;
+}
+
+
+nav li{
+    margin-right: 20px;
+}
+
+li {
+    display: inline-block;
+    margin: auto;
+    list-style: none;
+    z-index: 2;
+
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+aside>ul {
+    float: left;
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+aside>ul>li {
+    margin: 20px;
+    padding: 20px;
+}
+
+#profile {
+    border: 1px solid black;
+    float: left;
+    position: absolute;
+    top: 100px;
+    height: 100px;
+}
+
+article {
+    border: 1px solid black;
+    position: absolute;
+    left: 400px;
+    /* float: right; */
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+
+#todoDiv {
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 300px;
+    /* float: right; */
+    width: 60%;
+    /* height: 100%; */
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    top: 230px;
+
+}
+
+#myDIV {
+    border: 1px solid black;
+    float: left;
+    width: 100%;
+}
+
+
+
+/* Include the padding and border in an element's total width and height */
+
+* {
+    box-sizing: border-box;
+    /* width: 60%; */
+    /* height: 60%;; */
+}
+
+#myTodoContainer {
+    width: 60%;
+}
+
+/* Remove margins and padding from the list */
+
+#myUL {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Style the list items */
+
+#listElem {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    width: 100%;
+
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+
+
+/* Darker background-color on hover */
+
+#listElem:hover {
+    background-color: rgb(114, 188, 194);
+}
+
+/* When clicked on, add a background color and strike out text */
+
+#listElem.checked {
+    background:  rgb(105, 105, 104);
+    color: black;
+    text-decoration: line-through;
+    z-index: 2;
+
+}
+
+/* Add a "checked" mark when clicked on */
+
+#listElem.checked::before {
+    content: '';
+    position: absolute;
+    /* border-color: #fff; */
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+    z-index: 2;
+
+}
+
+/* Style the close button */
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Style the header */
+
+.header {
+    /* background-color: lightblue; */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/* Clear floats after the header */
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+
+#myInput {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    width: 90%;
+}
+
+/* Style the "Add" button */
+
+.addBtn {
+    padding: 10px;
+    width: 10%;
+    background: blue;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+
+}
+
+.addBtn:hover {
+    background-color: rgb(58, 93, 247);
+}
+

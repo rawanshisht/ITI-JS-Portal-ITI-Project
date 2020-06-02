@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/About.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #mainContainer :after {
+            content: '';
+            position: absolute;
+            /* opacity: 0.1; */
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            /* 4 5 6 7 13 */
+            background-image: url('../Resources/background7.jpg');
+        }
+        
+        #container {
+            margin: auto;
+            height: 1000px;
+            ;
+        }
+        
+        nav {
+            /* background-color: rgba(27, 27, 175, 0.5); */
+            text-align: center;
+            /* padding-top: 30px; */
+            margin-bottom: 10px;
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
+            z-index: 2;
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            box-shadow: 10px 10px 13px #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <header>
+            Subero
+        </header>
+        <nav>
+
+            <ul id="list">
+
+                <li>
+                    <a href='index.html'>Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a>About</a>
+                </li>
+                <li>
+                    <a href="mailto:rawan.shisht@gmail.com?subject=Contact us message&body=I hope you are fine!">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div id="aboutSubero">
+        <p>Subero</p>
+        <p>People develop countries, we develop P.E.O.P.L.E </p>
+    </div>
+    <div id="AboutGoal">
+        <div id="aboutVission">
+            <p>
+                Subero is a website to help iTi students organize their rich journey.
+                First, you should register in our website to be able to open your profile page which includes 3 pages.
+                One is to-do list page where you can add tasks and check when they are done or delete them if they are canceled.
+                Also, their is courses page where there are many links to courses and you can check the syllabus.
+                Last but not least, we all neeed a break from study, so their is a memory game to have a break and study again.
+
+                Contact us page is to email us with your problem.
+
+                We hope you enjoy our website.
+            </p>
+            <!-- <p>
+                Enabling The Community.The ITI-Community collaboration works to empower and enable the community with its dynamic sectors with the latest ICT tools and trends, by innovative solutions for the country’s critical issues addressing a real need and challenge.
+                All besides; raising the awareness about how Technology can enable the world's citizens to live a better life and facilitate their day-to-day life activities.
+            </p> -->
+        </div>
+    </div>
+    <div id="divcontai
+    ">
+
+    </div>
+    <div class="card">
+        <!-- <img id="img" alt="Profile" style="width:100%"> -->
+        <h4 id="name"></h4>
+        <div>
+            <a href="https://twitter.com/">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+
+
+    </div>
+    <div id="pageOwners">
+        <!-- <img id="img" alt="Profile" style="width:100%"> -->
+        <center>
+            <h4 id="name">Design By:Rawan El-Shishtawy</h4>
+            <h5>SD Track</h5>
+
+        </center>
+        <div>
+            <a href="https://dribbble.com/">
+                <i class="fa fa-dribbble"></i>
+            </a>
+            <a href="https://twitter.com/">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+
+
+    </div>
+    <div id="pageOwner2">
+        <!-- <img id="img" alt="Profile" style="width:100%"> -->
+        <center>
+
+            <h4 id="name">Design By:Ekram Mohamed</h4>
+            <h5>SD Track</h5>
+        </center>
+
+        <div>
+            <a href="https://dribbble.com/">
+                <i class="fa fa-dribbble"></i>
+            </a>
+            <a href="https://twitter.com/">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        var todo = document.getElementById("todoBtn");
+        var article = document.getElementById("article")
+        todo.addEventListener("click", function() {
+            window.open("todolist.html");
+        })
+        document.getElementById("article").innerHTML += " Hello " + window.localStorage.userName + " ! We are here to help you organize your life. By our user-friendly to-do list, you will track your progress. Open the courses link to study or you can have a break and play a game."
+
+        // document.getElementById("name").innerHTML += window.localStorage.userName;
+
+        // var imgSrc = '../Resources/' + window.localStorage.userGender + '.jpg';
+
+        document.getElementById("img").src = imgSrc;
+        var game = document.getElementById("gameBtn");
+        game.addEventListener("click", function() {
+            window.open("game.html");
+        })
+
+        var crs = document.getElementById("crsBtn");
+        crs.addEventListener("click", function() {
+            window.open("courses.html");
+        })
+    </script>
+</body>
+
+</html>

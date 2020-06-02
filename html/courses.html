@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Courses</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/courses.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #mainContainer :after {
+            content: '';
+            position: absolute;
+            /* opacity: 0.1; */
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            /* 4 5 6 7 13 */
+            background-image: url('../Resources/background7.jpg');
+        }
+        
+        #container {
+            margin: auto;
+            height: 1000px;
+            ;
+        }
+        
+        nav {
+            /* background-color: rgba(27, 27, 175, 0.5); */
+            text-align: center;
+            /* padding-top: 30px; */
+            margin-bottom: 10px;
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
+            z-index: 2;
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            box-shadow: 10px 10px 13px #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <header>
+            Subero
+        </header>
+        <nav>
+
+            <ul id="list">
+
+                <li>
+                    <a href='index.html'>Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="mailto:rawan.shisht@gmail.com?subject=Contact us message&body=I hope you are fine!">Contact Us</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div id="container">
+
+            <div id="listItems">
+                <ul>
+                    <li>
+                        <input type="button" id="todoBtn" value="To-Do List">
+                    </li>
+                    <li>
+                        <input type="button" id="crsBtn" value="Courses">
+                    </li>
+                    <li>
+                        <input type="button" id="gameBtn" value="Games">
+                    </li>
+
+                </ul>
+            </div>
+            <section>
+
+                <img src='../Resources/left.png' width="30px" height="30px" id="left">
+                <div class="card">
+                    <img id="img" alt="Profile" width="200px" height="200px" src="../Resources/courses/js.png">
+                    <h1 id="name">JS</h1>
+                    <p id="desc">Learn JavaScript, a Web development programming language, to add interactivity to your Web pages, and become an expert Web developer.</p>
+                    <a id="link" href="https://www.edx.org/course/javascript-introduction">
+                            Link<i class="fa fa-link"></i>
+                    </a>
+                    <!-- <p><input type="button" value="Contact"></p> -->
+                </div>
+                <img src='../Resources/right.png' width="30px" height="30px" id="right">
+
+
+            </section>
+
+
+
+        </div>
+    </div>
+
+    <!-- <script src="../js/todolist.js"></script> -->
+    <script>
+        var todo = document.getElementById("todoBtn");
+        var article = document.getElementById("article")
+        todo.addEventListener("click", function() {
+            window.open("todolist.html");
+        })
+
+        var game = document.getElementById("gameBtn");
+        game.addEventListener("click", function() {
+            window.open("game.html");
+        })
+
+        var crs = document.getElementById("crsBtn");
+        crs.addEventListener("click", function() {
+            window.open("courses.html");
+        })
+
+
+
+
+
+        var crsNames = ["JS", "jQuery", "C#", 'MVC Application Design using .NET Core 2.0']
+        var crsImg = ['../Resources/courses/js.png', '../Resources/courses/jquery.png', '../Resources/courses/c-sharp.jpg', '../Resources/courses/mvc.jpg']
+        var crsLink = ['https://www.edx.org/course/javascript-introduction', 'https://www.edx.org/course/introduction-to-jquery', 'https://www.edx.org/course/introduction-to-c-2', 'https://www.edx.org/course/mvc-application-design-using-net-core-20']
+        var crsDesc = ['Learn JavaScript, a Web development programming language, to add interactivity to your Web pages, and become an expert Web developer.', 'This course will teach you how to use jQuery to simplify common tasks in JavaScript,allowing the you to quickly add interactivity to web pages.', 'Learn the basics of the C# programming language, one of the most popular programming languages used to develop software for the Microsoft platform but also used to develop software for Linux, Android, and iOS systems as well.', 'Learn how to design MVC applications for the web using .NET Core 2.0']
+        var index = 1;
+        document.getElementById("right").addEventListener("click", function() {
+            console.log("clicked");
+            document.getElementById("img").src = crsImg[index];
+            document.getElementById("name").innerHTML = crsNames[index];
+            document.getElementById("link").setAttribute("href", crsLink[index]);
+            document.getElementById("desc").innerHTML = crsDesc[index];
+            index++;
+
+            if (index > 3) {
+                index = 0;
+            }
+        })
+
+        document.getElementById("left").addEventListener("click", function() {
+            document.getElementById("img").src = crsImg[index];
+            document.getElementById("name").innerHTML = crsNames[index];
+            document.getElementById("link").setAttribute("href", crsLink[index]);
+            document.getElementById("desc").innerHTML = crsDesc[index];
+
+            index--;
+            if (index < 0) {
+                index = 3;
+            }
+        })
+    </script>
+</body>
+
+</html>

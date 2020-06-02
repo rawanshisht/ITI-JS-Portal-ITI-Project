@@ -1,0 +1,142 @@
+       
+       #mainContainer :after {
+            content: '';
+            position: absolute;
+            /* opacity: 0.1; */
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-image: url('../Resources/background7.jpg');
+        }
+
+        #container {
+            margin: auto;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
+            z-index: 2;
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            box-shadow: 10px 10px 13px #888888;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0px 20px;
+            list-style: none;
+            text-decoration: none;
+
+            z-index: 2;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        li:hover {
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 2;
+
+        }
+
+        header {
+            font-size: 40px;
+            text-align: left;
+            margin-bottom: 10px;
+            font-family: 'Franklin Gothic Medium';
+            z-index: 2;
+            padding: 40px;
+            color: blue;
+
+
+            /* padding-left: 30px; */
+        }
+
+        section {
+            /* float: left; */
+            margin: auto;
+            width: 60%;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+            background-color: antiquewhite;
+        
+        text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            font-size: 15px;
+            font-style: oblique;
+}
+        #registerBtn {
+            position: absolute;
+            left: 80%;
+            top: 6%;
+            color: white;
+            background-color: blue;
+            width: 100px;
+            height: 50px;
+            border: blue 1px solid;
+            box-shadow: 10px 10px 13px #888888;
+        }
+
+        #registerBtn:hover {
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 2;
+        }
+        h1{
+            font-size: 60px;
+            text-align: center;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            text-shadow: 2px 2px #e6e0e0;
+
+        }
+        p{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            /* left: 5%; */
+            font-size: 15px;
+            font-style: oblique;
+            text-shadow: 2px 2px #e6e0e0;
+
+        }
+        article{
+           
+        }
+        footer {
+            clear: both;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            position: absolute;
+            top:80%;
+            left: 30%;
+        }

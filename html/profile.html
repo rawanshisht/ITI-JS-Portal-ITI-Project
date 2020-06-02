@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/profile.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #mainContainer :after {
+            content: '';
+            position: absolute;
+            /* opacity: 0.1; */
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            /* 4 5 6 7 13 */
+            background-image: url('../Resources/background7.jpg');
+        }
+        
+        #container {
+            margin: auto;
+            height: 1000px;
+            ;
+        }
+        
+        nav {
+            /* background-color: rgba(27, 27, 175, 0.5); */
+            text-align: center;
+            /* padding-top: 30px; */
+            margin-bottom: 10px;
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
+            z-index: 2;
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            box-shadow: 10px 10px 13px #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <header>
+            Subero
+        </header>
+        <nav>
+
+            <ul id="list">
+
+                <li>
+                    <a href='index.html'>Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="mailto:rawan.shisht@gmail.com?subject=Contact us message&body=I hope you are fine!">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="container">
+
+            <div id="listItems">
+                <ul>
+                    <li>
+                        <input type="button" id="todoBtn" value="To-Do List">
+                    </li>
+                    <li>
+                        <input type="button" id="crsBtn" value="Courses">
+                    </li>
+                    <li>
+                        <input type="button" id="gameBtn" value="Games">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img id="img" alt="Profile" style="width:100%">
+                <h1 id="name"></h1>
+                <p>Student</p>
+                <p id="uni"></p>
+                <a href="https://twitter.com/">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <!-- <p><input type="button" value="Contact"></p> -->
+            </div>
+
+
+            <section>
+
+                <p id="article">
+
+                </p>
+
+            </section>
+
+
+
+        </div>
+    </div>
+
+    <script src="../js/todolist.js"></script>
+    <script src="../js/register.js"></script>
+
+    <script>
+        var todo = document.getElementById("todoBtn");
+        var article = document.getElementById("article")
+        todo.addEventListener("click", function() {
+            window.open("todolist.html");
+        })
+        document.getElementById("article").innerHTML += " Hello " + window.localStorage.userName + " ! We are here to help you organize your life. By our user-friendly to-do list, you will track your progress. Open the courses link to study or you can have a break and play a game."
+
+        document.getElementById("name").innerHTML += window.localStorage.userName;
+
+        document.getElementById("uni").innerHTML = window.localStorage.uniInput + " University";
+        var imgSrc = '../Resources/' + window.localStorage.userGender + '.jpg';
+
+        document.getElementById("img").src = imgSrc;
+        var game = document.getElementById("gameBtn");
+        game.addEventListener("click", function() {
+            window.open("game.html");
+        })
+
+        var crs = document.getElementById("crsBtn");
+        crs.addEventListener("click", function() {
+            window.open("courses.html");
+        })
+    </script>
+</body>
+
+</html>
